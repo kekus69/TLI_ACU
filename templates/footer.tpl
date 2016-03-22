@@ -2,8 +2,9 @@
 <!-- END CONTENT -->               
 
 <!--FOOTER-->
-<div id="footer">
-</div>
+<footer>
+
+</footer>
 <!--END FOOTER-->
 
 </body>

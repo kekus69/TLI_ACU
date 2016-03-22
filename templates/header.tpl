@@ -22,12 +22,12 @@
   <h1 id="logotext" >Association Des Acupuncteurs</h1>
 </header>
 <nav id="navBar">
+  <div id="menuToggle" class="handle">Menu</div>
   <ul id="menu" class="">
     <li><a href="?page=accueil">Accueil</a></li>
     <li><a href="?page=information">Informations</a></li>
     <li><a href="?page=connexion">Connexion/Inscription</a></li>
   </ul>
-  <div id="menuToggle" class="handle">Menu</div>
 </nav>
 <div id="pushBack"></div>
 

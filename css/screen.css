@@ -72,6 +72,7 @@ nav .handle {
   box-sizing: border-box;
   padding: 1em 2em;
   cursor: pointer;
+  color: white;
 }
 
 section {
@@ -84,6 +85,11 @@ section {
 p {
   font-size: 1em;
   line-height: 1.5em;
+}
+
+footer {
+  background-color: #262626;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 580px) {
