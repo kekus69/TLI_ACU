@@ -89,7 +89,13 @@ p {
 
 footer {
   background-color: #262626;
-  padding: 10px;
+  position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 8px;
+    color: grey;
+    padding-bottom: 1%;
 }
 
 @media only screen and (max-width: 580px) {
