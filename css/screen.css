@@ -81,6 +81,94 @@ section {
   max-width: 60em;
   padding: 2em;
 }
+#formulaire {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login-header, #inscription-header {
+  background: #d35400;
+  padding: 4%;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+#login-container, #inscription-container {
+  background: #ebebeb;
+  padding: 3%;
+}
+
+/* Pour toutes les balises "p" */
+#formulaire li {
+  list-style: none;
+  padding: 2%;
+}
+
+/* Pour tous les "inputs" */
+#formulaire input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 3%;
+  outline: 0;
+}
+
+/* Champ déselectionné */
+#formulaire input[type="email"],
+#formulaire input[type="pseudo"],
+#formulaire input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Champ selectionné */
+#formulaire input[type="email"]:focus,
+#formulaire input[type="pseudo"]:focus,
+#formulaire input[type="password"]:focus {
+  border-color: #888;
+}
+
+/* Bouton déselectionné */
+#formulaire input[type="submit"] {
+  background: #262626;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Bouton survolé */
+#formulaire input[type="submit"]:hover {
+  background: #d35400;
+}
+
+#formulaire-login {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+
+#formulaire-inscription {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+
+:invalid { 
+  background-color: #F0DDDD;
+  border-color: #e88;
+  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, .8);
+  -moz-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+  -o-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+  -ms-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+  box-shadow:0 0 5px rgba(255, 0, 0, .8);
+}
 
 p {
   font-size: 1em;
