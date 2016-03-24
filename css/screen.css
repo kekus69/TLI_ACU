@@ -149,15 +149,15 @@ section {
 }
 
 #formulaire-login {
-  display: inline-block;
-  width: 25%;
+  width: 50%;
   vertical-align: top;
+  margin-left: 25%
 }
 
 #formulaire-inscription {
-  display: inline-block;
-  width: 25%;
+  width: 50%;
   vertical-align: top;
+  margin-left: 25%
 }
 
 :invalid { 
@@ -208,4 +208,11 @@ footer {
   nav ul.showing {
     max-height: 20em;
   }
+  #formulaire-inscription {
+    margin-left: 0%
+  }
+  #formulaire-login {
+    margin-left: 0%
+  }
+
 }
