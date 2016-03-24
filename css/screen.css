@@ -209,10 +209,12 @@ footer {
     max-height: 20em;
   }
   #formulaire-inscription {
-    margin-left: 0%
+    margin-left: 10%;
+    width:80%;
   }
   #formulaire-login {
-    margin-left: 0%
+    margin-left: 10%;
+    width:80%;
   }
 
 }
