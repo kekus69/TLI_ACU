@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-03-22 16:43:36
+/* Smarty version 3.1.28, created on 2016-04-09 23:31:14
   from "/var/www/html/TLI_ACU/templates/header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_56f16828b27d11_71021352',
+  'unifunc' => 'content_570974a241e831_37021843',
   'file_dependency' => 
   array (
     '296ab092e2109e9af2c8fa028e03df3b0275d195' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/header.tpl',
-      1 => 1458657076,
+      1 => 1460237423,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_56f16828b27d11_71021352 ($_smarty_tpl) {
+function content_570974a241e831_37021843 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -50,13 +50,12 @@ function content_56f16828b27d11_71021352 ($_smarty_tpl) {
 <nav id="navBar">
   <div id="menuToggle" class="handle">Menu</div>
   <ul id="menu" class="">
-    <li><a href="?page=accueil">Accueil</a></li>
-    <li><a href="?page=information">Informations</a></li>
-    <li><a href="?page=connexion">Connexion/Inscription</a></li>
+    <li><a href="?page=accueil"tabindex="1" accesskey="a">Accueil</a></li>
+    <li><a href="?page=information"tabindex="2" accesskey="i">Informations</a></li>
+    <li><a href="?page=connexion"tabindex="3" accesskey="c">Connexion/Inscription</a></li>
   </ul>
 </nav>
-<div id="pushBack"></div>
-
+<div id="bodycenter">
 <!--CONTENT-->
 
 <?php }

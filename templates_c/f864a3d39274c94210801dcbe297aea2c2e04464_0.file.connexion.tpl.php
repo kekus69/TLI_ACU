@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-03-24 14:59:30
+/* Smarty version 3.1.28, created on 2016-04-09 23:32:22
   from "/var/www/html/TLI_ACU/templates/pages/connexion.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_56f3f2c2979af8_74291373',
+  'unifunc' => 'content_570974e6ef5fc7_21924582',
   'file_dependency' => 
   array (
     'f864a3d39274c94210801dcbe297aea2c2e04464' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/pages/connexion.tpl',
-      1 => 1458827960,
+      1 => 1460237538,
       2 => 'file',
     ),
   ),
@@ -19,10 +19,10 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_56f3f2c2979af8_74291373 ($_smarty_tpl) {
+function content_570974e6ef5fc7_21924582 ($_smarty_tpl) {
 ?>
 <div id="formulaire">
-
+   
    <div id="formulaire-login">
     <h2 id="login-header">Connexion</h2>
     <form id="login-container">
@@ -45,7 +45,6 @@ function content_56f3f2c2979af8_74291373 ($_smarty_tpl) {
    <li><input type="submit" id="inscription-submit" value="Inscription"></li>
    </ul>
   </form>
- </div>
 
 </div>
 <?php }

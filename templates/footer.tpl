@@ -1,6 +1,6 @@
 
 <!-- END CONTENT -->               
-
+</div>
 <!--FOOTER-->
 <footer>
 test

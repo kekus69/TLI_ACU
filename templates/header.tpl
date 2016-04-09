@@ -24,12 +24,11 @@
 <nav id="navBar">
   <div id="menuToggle" class="handle">Menu</div>
   <ul id="menu" class="">
-    <li><a href="?page=accueil">Accueil</a></li>
-    <li><a href="?page=information">Informations</a></li>
-    <li><a href="?page=connexion">Connexion/Inscription</a></li>
+    <li><a href="?page=accueil"tabindex="1" accesskey="a">Accueil</a></li>
+    <li><a href="?page=information"tabindex="2" accesskey="i">Informations</a></li>
+    <li><a href="?page=connexion"tabindex="3" accesskey="c">Connexion/Inscription</a></li>
   </ul>
 </nav>
-<div id="pushBack"></div>
-
+<div id="bodycenter">
 <!--CONTENT-->
 

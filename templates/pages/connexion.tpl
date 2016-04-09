@@ -1,5 +1,5 @@
 <div id="formulaire">
-
+   
    <div id="formulaire-login">
     <h2 id="login-header">Connexion</h2>
     <form id="login-container">
@@ -22,6 +22,5 @@
    <li><input type="submit" id="inscription-submit" value="Inscription"></li>
    </ul>
   </form>
- </div>
 
 </div>
