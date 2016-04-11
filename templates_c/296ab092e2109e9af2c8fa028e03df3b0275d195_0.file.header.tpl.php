@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-09 23:31:14
+/* Smarty version 3.1.28, created on 2016-04-10 19:08:27
   from "/var/www/html/TLI_ACU/templates/header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_570974a241e831_37021843',
+  'unifunc' => 'content_570a888b9abaf7_07132190',
   'file_dependency' => 
   array (
     '296ab092e2109e9af2c8fa028e03df3b0275d195' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/header.tpl',
-      1 => 1460237423,
+      1 => 1460308103,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_570974a241e831_37021843 ($_smarty_tpl) {
+function content_570a888b9abaf7_07132190 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -55,7 +55,7 @@ function content_570974a241e831_37021843 ($_smarty_tpl) {
     <li><a href="?page=connexion"tabindex="3" accesskey="c">Connexion/Inscription</a></li>
   </ul>
 </nav>
-<div id="bodycenter">
+<div class="bodycenter">
 <!--CONTENT-->
 
 <?php }

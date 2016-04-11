@@ -81,6 +81,7 @@ section {
   max-width: 60em;
   padding: 2em;
 }
+
 #formulaire {
   width: 100%;
   margin-left: auto;
@@ -151,7 +152,7 @@ section {
 #formulaire-login {
   width: 50%;
   vertical-align: top;
-  margin-left: 25%
+  margin-left: 25%;
 }
 
 #formulaire-inscription {
@@ -173,6 +174,16 @@ section {
 p {
   font-size: 1em;
   line-height: 1.5em;
+}
+
+.containertest {
+	width: 1024px;
+	padding: 2em;
+}
+
+.bold-blue {
+	font-weight: bold;
+	color: #0277BD;
 }
 
 footer {

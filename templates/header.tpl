@@ -29,6 +29,6 @@
     <li><a href="?page=connexion"tabindex="3" accesskey="c">Connexion/Inscription</a></li>
   </ul>
 </nav>
-<div id="bodycenter">
+<div class="bodycenter">
 <!--CONTENT-->
 
