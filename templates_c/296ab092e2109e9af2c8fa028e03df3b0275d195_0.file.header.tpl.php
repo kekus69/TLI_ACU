@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-10 19:08:27
+/* Smarty version 3.1.28, created on 2016-04-17 13:34:04
   from "/var/www/html/TLI_ACU/templates/header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_570a888b9abaf7_07132190',
+  'unifunc' => 'content_571374ac410af9_32620582',
   'file_dependency' => 
   array (
     '296ab092e2109e9af2c8fa028e03df3b0275d195' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/header.tpl',
-      1 => 1460308103,
+      1 => 1460892838,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_570a888b9abaf7_07132190 ($_smarty_tpl) {
+function content_571374ac410af9_32620582 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -33,7 +33,16 @@ function content_570a888b9abaf7_07132190 ($_smarty_tpl) {
 
 <!--JAVASCRIPT-->
 	<?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
  type='text/javascript' src='javascript/nav.js'><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type='text/javascript' src='javascript/filter.js'><?php echo '</script'; ?>
 >
 
 <!--FIN DU JAVASCRIPT-->

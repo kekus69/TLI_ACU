@@ -8,7 +8,10 @@
 <!--FIN DU CSS-->
 
 <!--JAVASCRIPT-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
 	<script type='text/javascript' src='javascript/nav.js'></script>
+	<script type='text/javascript' src='javascript/filter.js'></script>
 
 <!--FIN DU JAVASCRIPT-->
 

@@ -1,27 +1,9 @@
-<?php
-/* Smarty version 3.1.28, created on 2016-04-17 16:21:38
-  from "/var/www/html/TLI_ACU/templates/pages/connexion.tpl" */
-
-if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
-  'has_nocache_code' => false,
-  'version' => '3.1.28',
-  'unifunc' => 'content_57139bf2199648_93588413',
-  'file_dependency' => 
-  array (
-    'f864a3d39274c94210801dcbe297aea2c2e04464' => 
-    array (
-      0 => '/var/www/html/TLI_ACU/templates/pages/connexion.tpl',
-      1 => 1460902896,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_57139bf2199648_93588413 ($_smarty_tpl) {
-?>
 <div id="formulaire">
+
+      <ul class="tab-group">
+        <li class="tab active"><a href="#login">Connection</a></li>
+        <li class="tab"><a href="#signup">Inscription</a></li>        
+      </ul>
    
    <div id="formulaire-login">
     <h2 id="login-header">Connexion</h2>
@@ -47,5 +29,3 @@ function content_57139bf2199648_93588413 ($_smarty_tpl) {
   </form>
 
 </div>
-<?php }
-}
