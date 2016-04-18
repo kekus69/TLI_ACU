@@ -18,10 +18,10 @@
   <tbody>
 
 {foreach from=$list_news item=news}
-	<tr data-pathologie={$news.patho_espace} data-caracteristique={$news.exemple_espace} data-exemple={$news.carac_espace}>
+	<tr data-pathologie="{$news.patho}" data-caracteristique="{$news.carac}" data-exemple="{$news.exemple}">
         <td>{$news.patho}</td>
-        <td>{$news.exemple}</td>
         <td>{$news.carac}</td>
+        <td>{$news.exemple}</td>
       </tr>
 {/foreach}
 
