@@ -1,5 +1,5 @@
 <?php
 
-$smarty->assign('title', 'test');
+$smarty->assign('title', 'ADA - Accueil');
 
 ?>
