@@ -197,7 +197,7 @@ footer {
     padding-bottom: 1%;
 }
 
-/*Tableaux***********************************************************/
+/*Tableaux*/
 
 table {
   font-family: 'Arial';
@@ -228,8 +228,6 @@ table th {
 table th.last {
   border-right: none;
 }
-
-
 
 /********************************************************************/
 

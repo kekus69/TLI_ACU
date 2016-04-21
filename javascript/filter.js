@@ -8,7 +8,6 @@ $(function() {
         attr = 'data-'+$this.attr('id'),
         value = $this.val();
 
-    //if the value is empty, show the previously hidden rows
     if (this.value !== '') {
       if ($filteredSet.length == 0) {
         $filteredSet = $allRows;
@@ -18,8 +17,6 @@ $(function() {
         .filter('['+attr+'*="'+value.toLowerCase()+'"]')
         .show();
       
-    //else filter the current set of visible rows
-    //according to each (other) filter input's current value
     } else {
       $filteredSet = $allRows;
       $this.siblings().each(function() {
@@ -41,7 +38,6 @@ $(function() {
     }
   }));
 
-  //populate the "campus" filter with the corresponding location
   $('.filters a').on('click', function() {
     var $this = $(this);
     
@@ -53,7 +49,6 @@ $(function() {
     return false;
   });
 
-  //clear & reset the filters
   $('.filters button').on('click', function() {
     $('.filters input').each(function() {
       var $this = $(this);
