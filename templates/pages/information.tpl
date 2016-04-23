@@ -3,7 +3,7 @@
   <input type="text" id="pathologie" placeholder="Pathologie" />
   <input type="text" id="caracteristique" placeholder="Caractéristiques" />
   <input type="text" id="exemple" placeholder="Exemple" />
-  <button>Reset</button>
+  <button>Effacer</button>
 
 </div>
 <table>

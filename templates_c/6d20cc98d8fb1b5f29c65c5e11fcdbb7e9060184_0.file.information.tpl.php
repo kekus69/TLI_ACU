@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-18 20:37:27
+/* Smarty version 3.1.28, created on 2016-04-23 02:13:36
   from "/var/www/html/TLI_ACU/templates/pages/information.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_571529676ce682_53575742',
+  'unifunc' => 'content_571abe30551ba8_25029863',
   'file_dependency' => 
   array (
     '6d20cc98d8fb1b5f29c65c5e11fcdbb7e9060184' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/pages/information.tpl',
-      1 => 1461004644,
+      1 => 1461370409,
       2 => 'file',
     ),
   ),
@@ -19,14 +19,14 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_571529676ce682_53575742 ($_smarty_tpl) {
+function content_571abe30551ba8_25029863 ($_smarty_tpl) {
 ?>
 <div class="filters">
 
   <input type="text" id="pathologie" placeholder="Pathologie" />
   <input type="text" id="caracteristique" placeholder="Caractéristiques" />
   <input type="text" id="exemple" placeholder="Exemple" />
-  <button>Reset</button>
+  <button>Effacer</button>
 
 </div>
 <table>
