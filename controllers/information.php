@@ -1,6 +1,6 @@
 <?php
 
-$smarty->assign('title', 'ADA - Recherche');
+$smarty->assign('title', 'ADA - Informations');
 
 $req = $bdd->prepare('SELECT p.desc as patho, k.name as carac, s.desc as exemple
 FROM `patho` p inner join `symptPatho` sp on sp.idP = p.idP inner join `symptome` s on s.idS = sp.idS inner join `keySympt` ks on ks.idS = s.idS inner join`keywords` k on k.idk = ks.idK GROUP BY patho, carac, exemple ORDER BY patho asc');

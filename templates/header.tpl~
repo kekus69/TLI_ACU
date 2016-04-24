@@ -29,7 +29,7 @@
   <ul id="menu" class="">
     <li><a href="?page=accueil"tabindex="1" accesskey="a">Accueil</a></li>
     <li><a href="?page=information"tabindex="2" accesskey="i">Informations</a></li>
-    <li><a href="?page=recherche"tabindex="3" accesskey="c">Recherche</a></li>
+    <li><a href="?page=connexion"tabindex="3" accesskey="c">Recherche</a></li>
   </ul>
 </nav>
 <div class="bodycenter">
