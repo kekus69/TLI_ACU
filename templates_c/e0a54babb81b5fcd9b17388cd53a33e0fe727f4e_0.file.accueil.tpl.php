@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-24 21:42:55
+/* Smarty version 3.1.28, created on 2016-04-25 20:37:29
   from "/var/www/html/TLI_ACU/templates/pages/accueil.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_571d21bfc93966_20928759',
+  'unifunc' => 'content_571e63e920e717_48445315',
   'file_dependency' => 
   array (
     'e0a54babb81b5fcd9b17388cd53a33e0fe727f4e' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/pages/accueil.tpl',
-      1 => 1461526963,
+      1 => 1461609378,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_571d21bfc93966_20928759 ($_smarty_tpl) {
+function content_571e63e920e717_48445315 ($_smarty_tpl) {
 ?>
 <div id="formulaire">
    
@@ -27,7 +27,7 @@ function content_571d21bfc93966_20928759 ($_smarty_tpl) {
     <h2 id="login-header">Connexion</h2>
     <form id="login-container">
     <ul>
-     <li><label for="login-email"> Email :<input type="email" id="login-email" placeholder="Email"></label></li>
+     <li><label for="login-email"> Email :<input type="email" id="login-email" placeholder="Exemple : toto@mail.net"></label></li>
      <li><label for="login-password"> Mot de passe :<input type="password" id="login-password" placeholder="Mot de passe"></label></li>
      <li><input type="submit" id="login-submit" value="Log in"></li>
     </ul>
@@ -36,12 +36,13 @@ function content_571d21bfc93966_20928759 ($_smarty_tpl) {
 
  <div id="formulaire-inscription">
   <h2 id="inscription-header">Inscription</h2>
-  <form id="inscription-container">
+  <form id="inscription-container" action="inscription.php" onsubmit="return verifForm(this)>
   <ul>
-   <li><label for="inscription-email"> Email :<input type="email" id="inscription-email" placeholder="Email"></label></li>
-   <li><label for="inscription-password"> Mot de passe :<input type="password" id="inscription-password" placeholder="Mot de passe"></label></li>
-   <li><label for="inscription-password2"> Confirmation mot de passe :<input type="password" id="inscription-password2" placeholder="Confirmation Mot de passe"></label></li>
-   <li><label for="inscription-pseudo"> Pseudo :<input type="text" id="inscription-pseudo" placeholder="Pseudo"></label></li>
+   <h3 id="champs-requis">Tous les champs sont requis</h3>
+   <li><label for="inscription-email"> Email :<input type="email" id="inscription-email" placeholder="Exemple : toto@mail.net" onblur="verifMail(this)" required></label></li>
+   <li><label for="inscription-password"> Mot de passe :<input type="password" id="inscription-password" placeholder="Mot de passe" required></label></li>
+   <li><label for="inscription-password2"> Confirmation mot de passe :<input type="password" id="inscription-password2 " placeholder="Confirmation Mot de passe" onblur="verifPass()" required></label></li>
+   <li><label for="inscription-pseudo"> Pseudo :<input type="text" id="inscription-pseudo" placeholder="Pseudo" onblur="verifPseudo(this)" required></label></li>
    <li><input type="submit" id="inscription-submit" value="Inscription"></li>
    </ul>
   </form>

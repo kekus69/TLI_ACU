@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-24 21:47:25
+/* Smarty version 3.1.28, created on 2016-04-24 22:21:43
   from "/var/www/html/TLI_ACU/templates/header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_571d22cd7611d0_35556990',
+  'unifunc' => 'content_571d2ad72e5919_51855102',
   'file_dependency' => 
   array (
     '296ab092e2109e9af2c8fa028e03df3b0275d195' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/header.tpl',
-      1 => 1461527241,
+      1 => 1461528779,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_571d22cd7611d0_35556990 ($_smarty_tpl) {
+function content_571d2ad72e5919_51855102 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -44,7 +44,21 @@ function content_571d22cd7611d0_35556990 ($_smarty_tpl) {
 	<?php echo '<script'; ?>
  type='text/javascript' src='javascript/filter.js'><?php echo '</script'; ?>
 >
-
+	<?php echo '<script'; ?>
+ type='text/javascript' src='javascript/surligne.js'><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type='text/javascript' src='javascript/verifPseudo.js'><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type='text/javascript' src='javascript/verifMail.js'><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type='text/javascript' src='javascript/verifPass.js'><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type='text/javascript' src='javascript/verifForm.js'><?php echo '</script'; ?>
+>
 <!--FIN DU JAVASCRIPT-->
 
 
