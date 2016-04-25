@@ -13,7 +13,7 @@
 
  <div id="formulaire-inscription">
   <h2 id="inscription-header">Inscription</h2>
-  <form id="inscription-container" action="inscription.php" onsubmit="return verifForm(this)>
+  <form method="post" id="inscription-container" action="inscription.php" onsubmit="return verifForm(this)>
   <ul>
    <h3 id="champs-requis">Tous les champs sont requis</h3>
    <li><label for="inscription-email"> Email :<input type="email" id="inscription-email" placeholder="Exemple : toto@mail.net" onblur="verifMail(this)" required></label></li>
