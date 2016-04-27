@@ -18,7 +18,6 @@ $req->closeCursor();
 
 
 if (smarty.post.Inscription) {
-echo 'inscription';
 	// on teste l'existence de nos variables. On teste également si elles ne sont pas vides
 	if ((isset($_POST['inscription-email']) && !empty($_POST['inscription-email'])) && (isset($_POST['inscription-password']) && !empty($_POST['inscription-password'])) && (isset($_POST['inscription-password2']) && !empty($_POST['inscription-password2']))&& (isset($_POST['inscription-pseudo']) && !empty($_POST['inscription-pseudo']))) {
 	// on teste les deux mots de passe

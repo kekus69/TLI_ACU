@@ -19,4 +19,5 @@ while($data = $req->fetch()){
 
 $smarty->assign('list_news', $list_news);
 
+$req->closeCursor(); 
 ?>

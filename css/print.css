@@ -1,0 +1,14 @@
+nav, footer, input, button{
+
+display : none;
+
+}
+
+#logo {
+  height: 50px;
+}
+
+
+#logotext {
+  display: inline-block;
+}

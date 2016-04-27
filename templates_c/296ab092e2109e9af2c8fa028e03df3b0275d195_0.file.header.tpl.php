@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-27 19:30:12
+/* Smarty version 3.1.28, created on 2016-04-28 01:08:59
   from "/var/www/html/TLI_ACU/templates/header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_5720f7240b30b7_83376535',
+  'unifunc' => 'content_5721468bccf7c0_17600016',
   'file_dependency' => 
   array (
     '296ab092e2109e9af2c8fa028e03df3b0275d195' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/header.tpl',
-      1 => 1461778203,
+      1 => 1461798515,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5720f7240b30b7_83376535 ($_smarty_tpl) {
+function content_5721468bccf7c0_17600016 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -29,6 +29,7 @@ function content_5720f7240b30b7_83376535 ($_smarty_tpl) {
 </title>
 <!--CSS-->
 	<link rel="stylesheet" type="text/css" href="css/screen.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
 <!--FIN DU CSS-->
 
 <!--JAVASCRIPT-->
@@ -64,9 +65,9 @@ function content_5720f7240b30b7_83376535 ($_smarty_tpl) {
 <nav id="navBar">
   <div id="menuToggle" class="handle">Menu</div>
   <ul id="menu" class="">
-    <li><a href="?page=accueil"tabindex="1" accesskey="a">Accueil</a></li>
-    <li><a href="?page=information"tabindex="2" accesskey="i">Informations</a></li>
-    <li><a href="?page=recherche"tabindex="3" accesskey="c">Recherche</a></li>
+    <li><a href="?page=accueil" tabindex="1" accesskey="a">Accueil</a></li>
+    <li><a href="?page=information" tabindex="2" accesskey="i">Informations</a></li>
+    <li><a href="?page=recherche" tabindex="3" accesskey="r">Recherche</a></li>
   </ul>
 </nav>
 <div class="bodycenter">

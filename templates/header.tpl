@@ -5,6 +5,7 @@
 	<title>{$title|default:'Association des acupuncteurs'}</title>
 <!--CSS-->
 	<link rel="stylesheet" type="text/css" href="css/screen.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
 <!--FIN DU CSS-->
 
 <!--JAVASCRIPT-->
@@ -28,9 +29,9 @@
 <nav id="navBar">
   <div id="menuToggle" class="handle">Menu</div>
   <ul id="menu" class="">
-    <li><a href="?page=accueil"tabindex="1" accesskey="a">Accueil</a></li>
-    <li><a href="?page=information"tabindex="2" accesskey="i">Informations</a></li>
-    <li><a href="?page=recherche"tabindex="3" accesskey="c">Recherche</a></li>
+    <li><a href="?page=accueil" tabindex="1" accesskey="a">Accueil</a></li>
+    <li><a href="?page=information" tabindex="2" accesskey="i">Informations</a></li>
+    <li><a href="?page=recherche" tabindex="3" accesskey="r">Recherche</a></li>
   </ul>
 </nav>
 <div class="bodycenter">
