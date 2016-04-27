@@ -1,263 +1,282 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 header {
-  background-color: #262626;
-  width: 100%;
-  padding: 40px 0;
-  color: white;
-  box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.1) inset;
+    width: 100%;
+    padding: 40px 0;
+    color: white;
+    background-color: #262626;
+    box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.1) inset;
 }
 
 #logo {
-  margin: auto;
-  height: 120px;
+    height: 120px;
+    margin: auto;
 }
 
 #logotext {
-  display: inline-block;
+    display: inline-block;
 }
 
 #navBar {
-  position: static;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+    position: static;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
 }
 
 #pushBack {
-  margin: 0;
-  padding: 0;
-  height: 0em;
+    height: 0;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
-  overflow: hidden;
-  background-color: #262626;
-  margin: 0;
-  padding: 0;
-  color: white;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    background-color: #262626;
 }
 
 nav li {
-  display: inline-block;
+    display: inline-block;
 }
 
 nav a,
 nav a:active {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  width: 12em; 
-  padding: 1em 0;
+    display: block;
+    width: 12em;
+    padding: 1em 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 nav a:hover {
-  background-color: #d35400;
+    background-color: #d35400;
 }
 
 nav .handle {
-  position: relative;
-  display: none;
-  width: 100%;
-  background-color: #262626;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 1em 2em;
-  cursor: pointer;
-  color: white;
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em 2em;
+    text-align: left;
+    color: white;
+    background-color: #262626;
+    cursor: pointer;
 }
 
 section {
-  position: relative;
-  margin: 0 auto;
-  max-width: 60em;
-  padding: 2em;
+    position: relative;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 60em;
 }
 
 #formulaire {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-#login-header, #inscription-header {
-  background: #d35400;
-  padding: 4%;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 3%;
+#login-header,
+#inscription-header {
+    margin-bottom: 3%;
+    padding: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #fff;
+    background: #d35400;
 }
 
-#login-container, #inscription-container {
-  background: #ebebeb;
-  padding: 3%;
+#login-container,
+#inscription-container {
+    padding: 3%;
+    background: #ebebeb;
 }
 
 /* Pour toutes les balises "p" */
+
 #formulaire li {
-  list-style: none;
-  padding: 2%;
+    padding: 2%;
+    list-style: none;
 }
 
 /* Pour tous les "inputs" */
+
 #formulaire input {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  padding: 3%;
-  outline: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    border-style: solid;
+    border-width: 1px;
+    outline: 0;
 }
 
 /* Champ déselectionné */
+
 #formulaire input[type="email"],
 #formulaire input[type="pseudo"],
 #formulaire input[type="password"] {
-  background: #fff;
-  border-color: #bbb;
-  color: #555;
+    border-color: #bbb;
+    color: #555;
+    background: #fff;
 }
 
 /* Champ selectionné */
+
 #formulaire input[type="email"]:focus,
 #formulaire input[type="pseudo"]:focus,
 #formulaire input[type="password"]:focus {
-  border-color: #888;
+    border-color: #888;
 }
 
 /* Bouton déselectionné */
+
 #formulaire input[type="submit"] {
-  background: #262626;
-  border-color: transparent;
-  color: #fff;
-  cursor: pointer;
+    border-color: transparent;
+    color: #fff;
+    background: #262626;
+    cursor: pointer;
 }
 
 /* Bouton survolé */
+
 #formulaire input[type="submit"]:hover {
-  background: #d35400;
+    background: #d35400;
 }
 
 #formulaire-login {
-  width: 50%;
-  vertical-align: top;
-  margin-left: 25%;
+    width: 50%;
+    margin-left: 25%;
+    vertical-align: top;
 }
 
 #formulaire-inscription {
-  width: 50%;
-  vertical-align: top;
-  margin-left: 25%
+    width: 50%;
+    margin-left: 25%;
+    vertical-align: top;
 }
 
-:invalid { 
-  background-color: #F0DDDD;
-  border-color: #e88;
-  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, .8);
-  -moz-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
-  -o-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
-  -ms-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
-  box-shadow:0 0 5px rgba(255, 0, 0, .8);
+:invalid {
+    border-color: #e88;
+    background-color: #F0DDDD;
+    -webkit-box-shadow: 0 0 5px rgba(255,0,0,.8);
+    -moz-box-shadow: 0 0 5px rbba(255,0,0,.8);
+    box-shadow: 0 0 5px rgba(255,0,0,.8);
+    -o-box-shadow: 0 0 5px rbba(255,0,0,.8);
+    -ms-box-shadow: 0 0 5px rbba(255,0,0,.8);
 }
 
 p {
-  font-size: 1em;
-  line-height: 1.5em;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 .containertest {
-	width: 1024px;
-	padding: 2em;
+    width: 1024px;
+    padding: 2em;
 }
 
 .bold-blue {
-	font-weight: bold;
-	color: #0277BD;
+    font-weight: bold;
+    color: #0277BD;
 }
 
 footer {
-  background-color: #262626;
-  position: fixed;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
     height: 8px;
-    color: grey;
     padding-bottom: 1%;
+    color: grey;
+    background-color: #262626;
 }
 
 /*Tableaux*/
 
 table {
-  font-family: 'Arial';
-  margin: 25px auto;
-  border-collapse: collapse;
-  border: 1px solid #eee;
-  border-bottom: 2px solid #d35400;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+    margin: 25px auto;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    border-bottom: 2px solid #d35400;
+    font-family: 'Arial';
+    box-shadow: 0 0 20px rgba(0,0,0,0.1) ,0 10px 20px rgba(0,0,0,0.05) ,0 20px 20px rgba(0,0,0,0.05) ,0 30px 20px rgba(0,0,0,0.05);
 }
+
 table tr:hover {
-  background: #f4f4f4;
+    background: #f4f4f4;
 }
+
 table tr:hover td {
-  color: #555;
+    color: #555;
 }
-table th, table td {
-  color: #999;
-  border: 1px solid #eee;
-  padding: 12px 35px;
-  border-collapse: collapse;
+
+table th,
+table td {
+    padding: 12px 35px;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    color: #999;
 }
+
 table th {
-  background: #d35400;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+    background: #d35400;
 }
+
 table th.last {
-  border-right: none;
+    border-right: none;
 }
 
 /********************************************************************/
 
-@media only screen and (max-width: 580px) {
-  nav .handle {
-    display: block;
-  }
-  nav li {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-  }
-  nav a {
-    width: 100%;
-    text-align: left;
-    padding: 1em 2em;
-    box-sizing: border-box;
-  }
-  nav ul {
-    position: relative;
-    max-height: 0em;
-  }
-  nav ul.showing {
-    max-height: 20em;
-  }
-  #formulaire-inscription {
-    margin-left: 10%;
-    width:80%;
-  }
-  #formulaire-login {
-    margin-left: 10%;
-    width:80%;
-  }
+@media only screen and (max-width:580px) {
+    nav .handle {
+        display: block;
+    }
 
+    nav li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1em 2em;
+        text-align: left;
+    }
+
+    nav ul {
+        position: relative;
+        max-height: 0;
+    }
+
+    nav ul.showing {
+        max-height: 20em;
+    }
+
+    #formulaire-inscription {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #formulaire-login {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
