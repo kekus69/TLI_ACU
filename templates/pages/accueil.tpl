@@ -17,7 +17,7 @@
  <div id="formulaire-inscription">
   <h2 id="inscription-header">Inscription</h2>
 
-  <form method="post" id="inscription-container" >
+  <form action="?page=accueil" method="post" id="inscription-container" >
   <ul>
    <h3 id="champs-requis">Tous les champs sont requis</h3>
 

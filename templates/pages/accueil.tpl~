@@ -17,7 +17,7 @@
  <div id="formulaire-inscription">
   <h2 id="inscription-header">Inscription</h2>
 
-  <form method="post" id="inscription-container" >
+  <form action="?page=accueil" method="post" id="Inscription" >
   <ul>
    <h3 id="champs-requis">Tous les champs sont requis</h3>
 
@@ -29,7 +29,7 @@
 
    <li><label for="inscription-pseudo"> Pseudo :<input type="text" id="inscription-pseudo" placeholder="Exemple : Toto (entre 3 et 25 caractères)" oninput="verifPseudo(this)" required></label></li>
 
-   <li><input type="submit" id="inscription-submit" value="Inscription"></li>
+   <li><input type="submit" id="Inscription" value="Inscription"></li>
    </ul>
   </form>
 

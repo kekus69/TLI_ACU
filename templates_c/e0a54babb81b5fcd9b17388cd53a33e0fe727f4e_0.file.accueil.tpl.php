@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-27 20:14:45
+/* Smarty version 3.1.28, created on 2016-04-27 21:33:01
   from "/var/www/html/TLI_ACU/templates/pages/accueil.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_572101950795d3_68298725',
+  'unifunc' => 'content_572113ed922247_76519841',
   'file_dependency' => 
   array (
     'e0a54babb81b5fcd9b17388cd53a33e0fe727f4e' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/pages/accueil.tpl',
-      1 => 1461780829,
+      1 => 1461782518,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_572101950795d3_68298725 ($_smarty_tpl) {
+function content_572113ed922247_76519841 ($_smarty_tpl) {
 ?>
 <div id="formulaire">
    
@@ -40,7 +40,7 @@ function content_572101950795d3_68298725 ($_smarty_tpl) {
  <div id="formulaire-inscription">
   <h2 id="inscription-header">Inscription</h2>
 
-  <form method="post" id="inscription-container" >
+  <form action="?page=accueil" method="post" id="inscription-container" >
   <ul>
    <h3 id="champs-requis">Tous les champs sont requis</h3>
 
