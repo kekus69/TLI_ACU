@@ -1,20 +1,8 @@
 <?php
 
-$smarty->assign('title', 'ADA - Accueil');
-<?php
-
-if(!empty($_POST['pseudo']))
-
-{
-
-// D'abord, je me connecte à la base de données.
-
-mysql_connect("localhost", "root", "tp");
-
-mysql_select_db("user");
 
 
-// Je mets aussi certaines sécurités ici…
+// Je mets aussi certaines sécurités ici si le javascript est désactivé..
 
 $passe = mysql_real_escape_string(htmlspecialchars($_POST['password-inscription']));
 

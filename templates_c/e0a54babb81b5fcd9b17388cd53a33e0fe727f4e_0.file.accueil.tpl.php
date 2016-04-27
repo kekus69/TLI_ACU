@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-27 19:15:27
+/* Smarty version 3.1.28, created on 2016-04-27 20:14:45
   from "/var/www/html/TLI_ACU/templates/pages/accueil.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_5720f3afcfc4f9_26559592',
+  'unifunc' => 'content_572101950795d3_68298725',
   'file_dependency' => 
   array (
     'e0a54babb81b5fcd9b17388cd53a33e0fe727f4e' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/pages/accueil.tpl',
-      1 => 1461777282,
+      1 => 1461780829,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5720f3afcfc4f9_26559592 ($_smarty_tpl) {
+function content_572101950795d3_68298725 ($_smarty_tpl) {
 ?>
 <div id="formulaire">
    
@@ -40,7 +40,7 @@ function content_5720f3afcfc4f9_26559592 ($_smarty_tpl) {
  <div id="formulaire-inscription">
   <h2 id="inscription-header">Inscription</h2>
 
-  <form method="post" id="inscription-container" onsubmit="return verifForm(this)>
+  <form method="post" id="inscription-container" >
   <ul>
    <h3 id="champs-requis">Tous les champs sont requis</h3>
 
@@ -52,7 +52,7 @@ function content_5720f3afcfc4f9_26559592 ($_smarty_tpl) {
 
    <li><label for="inscription-pseudo"> Pseudo :<input type="text" id="inscription-pseudo" placeholder="Exemple : Toto (entre 3 et 25 caractères)" oninput="verifPseudo(this)" required></label></li>
 
-   <li><input type="submit" id="inscription-submit" value="Inscription"></li>
+   <li><input type="submit" id="Inscription" value="Inscription"></li>
    </ul>
   </form>
 

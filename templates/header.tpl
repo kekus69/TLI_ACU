@@ -12,11 +12,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
 	<script type='text/javascript' src='javascript/nav.js'></script>
 	<script type='text/javascript' src='javascript/filter.js'></script>
-	<script type='text/javascript' src='javascript/surligne.js'></script>
 	<script type='text/javascript' src='javascript/verifPseudo.js'></script>
-	<script type='text/javascript' src='javascript/verifMail.js'></script>
 	<script type='text/javascript' src='javascript/verifPass.js'></script>
-	<script type='text/javascript' src='javascript/verifForm.js'></script>
 <!--FIN DU JAVASCRIPT-->
 
 
