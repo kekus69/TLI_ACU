@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-04-23 02:13:36
+/* Smarty version 3.1.28, created on 2016-04-27 21:08:09
   from "/var/www/html/TLI_ACU/templates/pages/information.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_571abe30551ba8_25029863',
+  'unifunc' => 'content_57210e19ac5df1_66790122',
   'file_dependency' => 
   array (
     '6d20cc98d8fb1b5f29c65c5e11fcdbb7e9060184' => 
     array (
       0 => '/var/www/html/TLI_ACU/templates/pages/information.tpl',
-      1 => 1461370409,
+      1 => 1461784085,
       2 => 'file',
     ),
   ),
@@ -19,13 +19,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_571abe30551ba8_25029863 ($_smarty_tpl) {
+function content_57210e19ac5df1_66790122 ($_smarty_tpl) {
 ?>
 <div class="filters">
 
   <input type="text" id="pathologie" placeholder="Pathologie" />
-  <input type="text" id="caracteristique" placeholder="Caractéristiques" />
-  <input type="text" id="exemple" placeholder="Exemple" />
+  <input type="text" id="caracteristique" placeholder="Caractéristique" />
+  <input type="text" id="symptome" placeholder="Symptôme" />
   <button>Effacer</button>
 
 </div>
@@ -34,7 +34,7 @@ function content_571abe30551ba8_25029863 ($_smarty_tpl) {
     <tr>
       <th>Catégorie de pathologie</th>
       <th>Caratéristiques possibles</th>
-      <th>Exemple</th>
+      <th>Symptômes</th>
 
     </tr>
   </thead>
@@ -54,13 +54,13 @@ $__foreach_news_0_saved_local_item = $_smarty_tpl->tpl_vars['news'];
 ?>
 	<tr data-pathologie="<?php echo $_smarty_tpl->tpl_vars['news']->value['patho'];?>
 " data-caracteristique="<?php echo $_smarty_tpl->tpl_vars['news']->value['carac'];?>
-" data-exemple="<?php echo $_smarty_tpl->tpl_vars['news']->value['exemple'];?>
+" data-symptome="<?php echo $_smarty_tpl->tpl_vars['news']->value['symptome'];?>
 ">
         <td><?php echo $_smarty_tpl->tpl_vars['news']->value['patho'];?>
 </td>
         <td><?php echo $_smarty_tpl->tpl_vars['news']->value['carac'];?>
 </td>
-        <td><?php echo $_smarty_tpl->tpl_vars['news']->value['exemple'];?>
+        <td><?php echo $_smarty_tpl->tpl_vars['news']->value['symptome'];?>
 </td>
       </tr>
 <?php
@@ -76,5 +76,6 @@ $_smarty_tpl->tpl_vars['news'] = $__foreach_news_0_saved_item;
    
   </tbody>
 </table>
+</div>
 <?php }
 }

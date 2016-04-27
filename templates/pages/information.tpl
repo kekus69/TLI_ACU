@@ -1,8 +1,8 @@
 <div class="filters">
 
   <input type="text" id="pathologie" placeholder="Pathologie" />
-  <input type="text" id="caracteristique" placeholder="Caractéristiques" />
-  <input type="text" id="exemple" placeholder="Exemple" />
+  <input type="text" id="caracteristique" placeholder="Caractéristique" />
+  <input type="text" id="symptome" placeholder="Symptôme" />
   <button>Effacer</button>
 
 </div>
@@ -11,17 +11,17 @@
     <tr>
       <th>Catégorie de pathologie</th>
       <th>Caratéristiques possibles</th>
-      <th>Exemple</th>
+      <th>Symptômes</th>
 
     </tr>
   </thead>
   <tbody>
 
 {foreach from=$list_news item=news}
-	<tr data-pathologie="{$news.patho}" data-caracteristique="{$news.carac}" data-exemple="{$news.exemple}">
+	<tr data-pathologie="{$news.patho}" data-caracteristique="{$news.carac}" data-symptome="{$news.symptome}">
         <td>{$news.patho}</td>
         <td>{$news.carac}</td>
-        <td>{$news.exemple}</td>
+        <td>{$news.symptome}</td>
       </tr>
 {/foreach}
 
@@ -29,3 +29,4 @@
    
   </tbody>
 </table>
+</div>
