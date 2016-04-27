@@ -1,25 +1,16 @@
-function verifAge()
+function verifpass(input) {
+	  
+if (input.value != document.getElementById('inscription-password').value) {
 
-{
-var champ1 = document.getElementById('inscription-password');
-var champ2 = document.getElementById('inscription-password2');
-   if(champ1!=champ2)
+input.setCustomValidity('Les deux mots de passe ne correspondent pas.');
 
-   {
-      message.innerHTML = "Passwords Do Not Match!"
+  } else {
 
-      return false;
+// le champ est valide : on réinitialise le message d'erreur
+	
+	input.setCustomValidity('');
 
-   }
+	  }
 
-   else
+	}
 
-   {
-
-      message.innerHTML = "Passwords Match!"
-
-      return true;
-
-   }
-
-}
