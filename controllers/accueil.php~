@@ -16,9 +16,52 @@ echo '<li>Patho :' . $donnees['desc'] . '</li>';
 echo '</ul>';
 $req->closeCursor(); 
 
+if(isset($_SESSION)){
+	//rediriger vers bonjour.tpl 
+}
 
-if ($_POST['Inscription'] && $_POST['Inscription'] == 'Inscription') {
-echo 'inscription';
+//Si le formulaire connexion a été submit
+if (isset($_POST['Login'])) {
+	$erreur='no';
+	//on test les 2 champs
+	if ((isset($_POST['login-email']) && !empty($_POST['login-email'])) && (isset($_POST['login-password']) && !empty($_POST['login-password']))) {
+		//on vérifie que le mail existe
+		$req = $bdd->prepare('SELECT count(*) FROM user WHERE email="'.mysql_escape_string($_POST['login-email']).'"');
+		$req->execute();
+		$data = $req->fetch();
+		if ($data[0] != 0) {
+			//on vérifie la combinaison mail/password
+			$req = $bdd->prepare('SELECT passe FROM user WHERE email="'.mysql_escape_string($_POST['login-email']).'"');
+			$req->execute();
+			$data = $req->fetch();
+			$pass=md5($_POST['login-password']);
+			if ($data[0] == $pass) {
+				//on récupère le pseudo : 
+				$req = $bdd->prepare('SELECT pseudo FROM user WHERE email="'.mysql_escape_string($_POST['login-email']).'"');
+				$req->execute();
+				$pseudo = $req->fetch();
+				//on lance une session
+				session_start();
+				$_SESSION["login"] = $pseudo[0];
+
+			}else{
+				$erreur = 'Password erroné';
+			}
+		}else{
+			$erreur = 'Adresse mail non connue';
+		}
+	}else{
+		$erreur = 'Les champs email et password doivent être remplis';
+	}
+	echo $erreur;
+
+	
+	
+}
+
+
+//Si le formulaire d'inscription a été submit
+if (isset($_POST['Inscription'])) {
 	// on teste l'existence de nos variables. On teste également si elles ne sont pas vides
 	if ((isset($_POST['inscription-email']) && !empty($_POST['inscription-email'])) && (isset($_POST['inscription-password']) && !empty($_POST['inscription-password'])) && (isset($_POST['inscription-password2']) && !empty($_POST['inscription-password2']))&& (isset($_POST['inscription-pseudo']) && !empty($_POST['inscription-pseudo']))) {
 	// on teste les deux mots de passe
@@ -26,28 +69,35 @@ echo 'inscription';
 		$erreur = 'Les 2 mots de passe sont différents.';
 	}
 	else {
-		// on recherche si ce login est déjà utilisé par un autre membre
-		$sql = 'SELECT count(*) FROM user WHERE pseudo="'.mysql_escape_string($_POST['inscription-pseudo']).'"';
-		$req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
-		$data = mysql_fetch_array($req);
+		// on recherche si ce login et le mail est déjà utilisé par un autre membre
+		$req = $bdd->prepare('SELECT count(*) FROM user WHERE pseudo="'.mysql_escape_string($_POST['inscription-pseudo']).'"');
+		$req->execute();
+		$data = $req->fetch();
+		$req = $bdd->prepare('SELECT count(*) FROM user WHERE email="'.mysql_escape_string($_POST['inscription-email']).'"');
+		$req->execute();
+		$data2 = $req->fetch();
+		if (($data[0] == 0)&&($data2[0]==0)) {
 
-		if ($data[0] == 0) {
-		$sql = 'INSERT INTO user VALUES("", "'.mysql_escape_string($_POST['inscription-pseudo']).'", "'.mysql_escape_string(md5($_POST['inscription-password'])).'","'.mysql_escape_string($_POST['inscription-email']).'")';
-		mysql_query($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
-
-		session_start();
-		$_SESSION['inscription-pseudo'] = $_POST['inscription-pseudo'];
-		//header('Location: membre.php');
-		exit();
+			$req = $bdd->prepare('INSERT INTO user VALUES("", "'.mysql_escape_string($_POST['inscription-pseudo']).'", "'.mysql_escape_string(md5($_POST['inscription-password'])).'","'.mysql_escape_string($_POST['inscription-email']).'")');
+			$req->execute() or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
+			session_start();
+			$_SESSION['login'] = $_POST['inscription-pseudo'];
+			echo("bjr".$_SESSION['login'].".");
+			exit();
 		}
 		else {
-		$erreur = 'Un membre possède déjà ce login.';
+			$erreur = 'Un membre possède déjà ce login.';
+		
 		}
 	}
 	}
 	else {
-	$erreur = 'Au moins un des champs est vide.';
+		$erreur = 'Au moins un des champs est vide.';
 	}
+	echo $erreur;
+
 }
+
+
 
 ?>

@@ -1,11 +1,11 @@
 <div id="formulaire">
    <div id="formulaire-login">
       <h2 id="login-header">Connexion</h2>
-      <form id="login-container">
+      <form action="?page=accueil" method="post" id="login-container">
          <ul>
-            <li><label for="login-email"> Email :<input type="email" id="login-email" placeholder="Exemple : toto@mail.net"></label></li>
-            <li><label for="login-password"> Mot de passe :<input type="password" id="login-password" placeholder="Mot de passe"></label></li>
-            <li><input type="submit" id="login-submit" value="Se connecter"></li>
+            <li><label for="login-email"> Email :<input type="email" id="login-email" name="login-email" placeholder="Exemple : toto@mail.net"></label></li>
+            <li><label for="login-password"> Mot de passe :<input type="password" id="login-password" name="login-password" placeholder="Mot de passe"></label></li>
+            <li><input type="submit" id="Login" name="Login" value="Se connecter"></li>
          </ul>
       </form>
    </div>
@@ -14,11 +14,11 @@
       <form action="?page=accueil" method="post" id="inscription-container" >
          <ul>
             <h3 id="champs-requis">Tous les champs sont requis</h3>
-            <li><label for="inscription-email"> Email :<input type="email" id="inscription-email" placeholder="Exemple : toto@mail.net" required></label></li>
-            <li><label for="inscription-password"> Mot de passe :<input type="password" id="inscription-password" placeholder="Mot de passe" required></label></li>
-            <li><label for="inscription-password2"> Confirmation mot de passe :<input type="password" id="inscription-password2" placeholder="Confirmation Mot de passe" oninput='verifpass(this)' required></label></li>
-            <li><label for="inscription-pseudo"> Pseudo :<input type="text" id="inscription-pseudo" placeholder="Exemple : Toto (entre 3 et 25 caractères)" oninput="verifPseudo(this)" required></label></li>
-            <li><input type="submit" id="Inscription" value="Inscription"></li>
+            <li><label for="inscription-email"> Email :<input type="email" id="inscription-email" name="inscription-email" placeholder="Exemple : toto@mail.net" required></label></li>
+            <li><label for="inscription-password"> Mot de passe :<input type="password" id="inscription-password" name="inscription-password" placeholder="Mot de passe" required></label></li>
+            <li><label for="inscription-password2"> Confirmation mot de passe :<input type="password" id="inscription-password2" name="inscription-password2" placeholder="Confirmation Mot de passe" oninput='verifpass(this)' required></label></li>
+            <li><label for="inscription-pseudo"> Pseudo :<input type="text" id="inscription-pseudo" name="inscription-pseudo" placeholder="Exemple : Toto (entre 3 et 25 caractères)" oninput="verifPseudo(this)" required></label></li>
+            <li><input type="submit" id="Inscription" name="Inscription" value="Inscription"></li>
          </ul>
       </form>
    </div>
