@@ -1,6 +1,17 @@
 #activation de la réécriture d'URL
 RewriteBase	/
 RewriteEngine	On
+Options -Indexes
+Options +FollowSymlinks
+
+#mauvaise ecriture d'URL : redirection vers l'index
+RewriteRule ^(\w*)$ TLI_ACU/index.php [L]
 
 #reecriture de l'url et récupération de l'opérande ainsi que les nombres
 RewriteRule	^calculatrice/([a-z]+)/([0-9]+)/([0-9]+)$ /TLI_ACU/CalculatriceWebService/calculatrice.php?operande=$1&first=$2&second=$3 [NC,L]
+
+#Utilisation : TLI_ACU/calculatrice/'opérande'/'premier membre'/'second membre'
+
+#Information sur les drapeaux
+#	L : ne pas éxécuter les règles suivantes si conditions remplie
+#	NC: case sensitive désactivé  
