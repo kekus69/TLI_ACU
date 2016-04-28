@@ -1,5 +1,5 @@
 <?php
 
-$smarty->assign('title', 'ADA - Connexion');
+$smarty->assign('title', 'ADA - Recherche');
 
 ?>
