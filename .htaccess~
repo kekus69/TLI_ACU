@@ -1,6 +1,0 @@
-#activation de la réécriture d'URL
-RewriteBase	/
-RewriteEngine	On
-
-#reecriture de l'url et récupération de l'opérande ainsi que les nombres
-RewriteRule	^calculatrice/([a-z]+)/([0-9]+)/([0-9]+)$ /TLI_ACU/calculator.php?operande=$1&first=$2&second=$3 [NC,L]
